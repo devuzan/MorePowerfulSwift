@@ -1,2 +1,3 @@
 # MorePowerfulSwift
-More Powerful Swift
+
+A description of this package.
