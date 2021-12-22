@@ -16,7 +16,7 @@ public extension UITableView {
     return cell
   }
   func dequeReusebleView<T: UITableViewHeaderFooterView>(type: T.Type) -> T {
-    guard let cell = dequeueReusableHeaderFooterView(withIdentifier: type.identifier) as? T else {
+    guard let cell = dequeueReusableHeaderFooterView(withIdentifier: type.className) as? T else {
       fatalError("dequeReusebleView error")
     }
     return cell

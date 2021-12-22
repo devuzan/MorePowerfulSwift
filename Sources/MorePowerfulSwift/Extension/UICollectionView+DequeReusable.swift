@@ -16,7 +16,7 @@ public extension UICollectionView {
     return cell
   }
   func dequeReusebleView<T: UICollectionReusableView>(view: T.Type, kind: String, indexPath: IndexPath) -> T {
-    guard let cell = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: UICollectionReusableView.identifier, for: indexPath) as? T else {
+    guard let cell = dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: UICollectionReusableView.className, for: indexPath) as? T else {
       fatalError("dequeReusebleView error")
     }
     return cell
